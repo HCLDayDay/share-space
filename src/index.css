@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,100..900;1,100..900&family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "DM Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "EB Garamond", Georgia, serif;
+  
+  --color-primary: #410c0e;
+  --color-primary-container: #5d2121;
+  --color-on-primary-container: #db8683;
+  --color-background: #fef8f6;
+  --color-surface: #fef8f6;
+  --color-surface-container-low: #f8f2f0;
+  --color-surface-container: #f2edeb;
+  --color-surface-container-high: #ede7e5;
+  --color-surface-container-highest: #e7e1df;
+  --color-on-surface: #1d1b1a;
+  --color-on-surface-variant: #534342;
+  --color-outline: #867371;
+  --color-outline-variant: #d9c1c0;
+  --color-secondary: #5e5e5d;
+  --color-tertiary: #21201d;
+  --color-error: #ba1a1a;
+  
+  --animate-float: subtle-float 6s ease-in-out infinite;
+}
+
+@keyframes subtle-float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-4px); }
+}
+
+/* Custom scrollbars and styling */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 4px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #867371;
+  border-radius: 9999px;
+}
+
+.polaroid-frame {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+  transition: transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.polaroid-frame:hover {
+  transform: translateY(-8px) rotate(1deg);
+}
+
+body {
+  background-color: #fef8f6;
+  color: #1d1b1a;
+  -webkit-font-smoothing: antialiased;
+}
+

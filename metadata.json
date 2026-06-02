@@ -1,0 +1,6 @@
+{
+  "name": "A & J Shared Space",
+  "description": "An intimate, serene digital sanctuary for couples to document daily rituals, shared menus, memories, and messages.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
